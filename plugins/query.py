@@ -432,7 +432,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/mkn_bots_updates")
+            InlineKeyboardButton("𓆩•𝐊𝐢𝐬𝐬𝐮 💞•𓆪", url="https://t.me/Bot_Making_Tips")
             ],[      
             InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
             InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
@@ -468,7 +468,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', url='https://github.com/MrMKN/PROFESSOR-BOT')
+            InlineKeyboardButton('Want To Make', url='https://t.me/kissu123456')
             ],[
             InlineKeyboardButton('‹ Bᴀᴄᴋ', 'about')
         ]]
