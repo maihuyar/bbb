@@ -54,7 +54,10 @@ RemoveBG_API = environ.get("RemoveBG_API", "")
 # url shortner
 SHORT_URL = environ.get("SHORT_URL")
 SHORT_API = environ.get("SHORT_API")
-
+OPENAI_API = environ.get('OPENAI_API', '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')
+if len(OPENAI_API) == 0:
+    print('Warning - OPENAI_API is empty')
+    
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL','-1001863821585'))
@@ -74,7 +77,8 @@ MELCOW_NEW_USERS = is_enabled(environ.get('MELCOW_NEW_USERS', "True"), True)
 PROTECT_CONTENT = is_enabled(environ.get('PROTECT_CONTENT', "False"), False)
 PUBLIC_FILE_STORE = is_enabled(environ.get('PUBLIC_FILE_STORE', "True"), True)
 LOG_MSG = "{} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ....✨\n\n🗓️ Dᴀᴛᴇ : {}\n⏰ Tɪᴍᴇ : {}\n\n🖥️ Rᴇᴏᴩ: {}\n🉐 Vᴇʀsɪᴏɴ: {}\n🧾 Lɪᴄᴇɴꜱᴇ: {}\n©️ Cᴏᴩʏʀɪɢʜᴛ: {}"
-INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
+SUPPORT_GROUP = int(SUPPORT_GROUP)
+SUPPORT_LINK = int(SUPPORT_GROUP)
 
 
 
