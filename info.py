@@ -77,7 +77,12 @@ MELCOW_NEW_USERS = is_enabled(environ.get('MELCOW_NEW_USERS', "True"), True)
 PROTECT_CONTENT = is_enabled(environ.get('PROTECT_CONTENT', "False"), False)
 PUBLIC_FILE_STORE = is_enabled(environ.get('PUBLIC_FILE_STORE', "True"), True)
 LOG_MSG = "{} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ....✨\n\n🗓️ Dᴀᴛᴇ : {}\n⏰ Tɪᴍᴇ : {}\n\n🖥️ Rᴇᴏᴩ: {}\n🉐 Vᴇʀsɪᴏɴ: {}\n🧾 Lɪᴄᴇɴꜱᴇ: {}\n©️ Cᴏᴩʏʀɪɢʜᴛ: {}"
-SUPPORT_GROUP = int(SUPPORT_GROUP)
+SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '')
+if len(SUPPORT_GROUP) == 0:
+    print('Error - SUPPORT_GROUP is missing, exiting now')
+    exit()
+else:
+    SUPPORT_GROUP = int(SUPPORT_GROUP)
 SUPPORT_LINK = int(SUPPORT_GROUP)
 
 
